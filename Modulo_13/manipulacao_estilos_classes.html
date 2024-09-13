@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulação de Estilos e Classes no DOM</title>
+    <style>
+        .destaque {
+            color: red;  
+            font-weight: bold;  
+        }
+
+        .fundo-azul {
+            background-color: lightblue; 
+            font-size: 2em; 
+            /* font-size: 2em; --> funciona, porem esta sendo sobrescrito nas funções */
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <p id="paragrafo">Texto para estilização.</p>
+    <button id="alterarEstilo">Alterar Estilo Direto</button>
+    <button id="adicionarClasse">Adicionar Classe</button>
+    <button id="removerClasse">Remover Classe</button>
+    <button id="alternarClasse">Alternar Classe</button>
+    <script src="script.js"></script>
+</body>
+</html>

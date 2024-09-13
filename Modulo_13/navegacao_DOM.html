@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Navegação no DOM</title>
+</head>
+<body>
+    <div id="divPrincipal">
+        <p>Parágrafo Principal</p>
+        <ul>
+            <li id="item1">Item 1</li>
+            <li id="item2">Item 2
+                <ul>
+                    <li id="subitem1">Subitem 1</li>
+                    <li id="subitem2">Subitem 2</li>
+                </ul>
+            </li>
+
+            <li id="item3">Item 3</li>
+            <li id="item4">Item 4</li>
+        </ul>
+    </div>
+    <button onclick="acessarParent()">Acessar Elemento Pai</button>
+    <button onclick="listarChildren()">Listar Filhos</button>
+    <button onclick="irProximo()">Ir para o Próximo Irmão</button>
+    <button onclick="irAnterior()">Ir para o Irmão Anterior</button>
+    <p id="resultado">Resultados aparecerão aqui.</p>
+    <script src="script.js"></script>             
+</body>
+</html>
